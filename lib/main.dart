@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_paketler/get_storage.dart';
+import 'package:flutter_paketler/pages/home_page.dart';
+import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 void main()async {
@@ -13,14 +15,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'GetX',
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      getPages: [
+        GetPage(name: '/', page: ()=> const HomePage())
+      ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
 
       ),
-      home: const GetStoragePage(),
+      //home: const GetStoragePage(),
     );
   }
 }
