@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_paketler/get_storage.dart';
-import 'package:flutter_paketler/pages/home_page.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+
+import 'core/pages.dart';
 
 void main()async {
   await GetStorage.init();
@@ -19,9 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'GetX',
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      getPages: [
-        GetPage(name: '/', page: ()=> const HomePage())
-      ],
+      getPages: Pages.pages,
       theme: ThemeData(
         primarySwatch: Colors.blue,
 
