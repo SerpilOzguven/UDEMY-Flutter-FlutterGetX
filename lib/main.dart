@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_paketler/get_storage.dart';
+import 'package:get_storage/get_storage.dart';
 
-void main() {
+void main()async {
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -12,12 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'GetX',
-      debugShowCheckModeBanner: false,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
 
       ),
-      home: const Scaffold(),
+      home: const GetStoragePage(),
     );
   }
 }

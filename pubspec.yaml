@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   path:
   get: ^4.6.6
+  get_storage: ^2.1.1
 
 
 
