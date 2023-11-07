@@ -23,9 +23,9 @@ class TranslationPage extends StatelessWidget {
             DropdownButton(
                 items: liste
                 .map((e) => DropdownMenuItem(
-                  child: Text(e),
-                  value: e,
-                ))
+                    child: Text(e),
+                    value: e,
+                      ))
                     .toList(),
                 hint: const Text('Seciniz'),
                 value: lang,

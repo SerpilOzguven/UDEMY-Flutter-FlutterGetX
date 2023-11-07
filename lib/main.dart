@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_paketler/core/themes.dart';
 import 'package:flutter_paketler/core/translations.dart';
+import 'package:flutter_paketler/service/theme_service.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
@@ -22,11 +24,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       translations: MyTranslations(),
       getPages: Pages.pages,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-
-      ),
-      //home: const GetStoragePage(),
+      //themeMode: ThemeService().getThemeMode(),
+      theme: ThemeService().getThemeData(),
+      //darkTheme : Themes.darkTheme,
     );
   }
 }
