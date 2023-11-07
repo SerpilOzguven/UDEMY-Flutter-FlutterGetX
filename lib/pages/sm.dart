@@ -16,7 +16,7 @@ class SMPage extends GetWidget<NumberController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(Get.find<NumberController>().toString().sayi)
+            Text(Get.find<NumberController>().sayi.toString()),
             /*
             Obx(() => Text(
               nController.sayi.toString(),
