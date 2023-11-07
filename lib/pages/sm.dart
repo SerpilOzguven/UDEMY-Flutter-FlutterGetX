@@ -24,7 +24,7 @@ class SMPage extends GetWidget<NumberController> {
               ),
             ),
 
-             */
+
             GetX<NumberController>(
               init: NumberController() ,
               initState: (func){
@@ -55,7 +55,7 @@ class SMPage extends GetWidget<NumberController> {
                 ],
               ),
             ),
-            /*
+
             ElevatedButton(onPressed: (){
               nController.increment();
             }, child: const Text('Increment'),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_paketler/bindings/number_binding.dart';
 import 'package:flutter_paketler/core/themes.dart';
 import 'package:flutter_paketler/core/translations.dart';
 import 'package:flutter_paketler/service/theme_service.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'GetX',
+      initialBinding: NumberBinding(),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       translations: MyTranslations(),
