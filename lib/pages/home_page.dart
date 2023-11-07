@@ -26,6 +26,9 @@ class HomePage extends StatelessWidget {
             ElevatedButton(onPressed: (){
               Get.toNamed('/theme');
             }, child: const Text('Theme')),
+            ElevatedButton(onPressed: (){
+              Get.toNamed('/utils');
+            }, child: const Text('Utils')),
           ],
         ),
       ),
