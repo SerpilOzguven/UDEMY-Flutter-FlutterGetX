@@ -1,3 +1,4 @@
+// TODO Implement this library.import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -61,9 +62,9 @@ class SnackBarPage extends StatelessWidget {
                 Get.defaultDialog(
                     title: 'Baslik',
                     middleText: 'Aciklama',
-                    textCancel:'Iptal Et',
+                    textCancel:'iptal Et',
                     textConfirm: 'Kabul Et',
-                    cancel: Text('Ýptal Et2')
+                    cancel: const Text('iptal Et2'),
                 );
               },
               child: const Text('Get Dialog'),),

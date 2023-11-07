@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_paketler/core/translations.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'GetX',
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
+      translations: MyTranslations(),
       getPages: Pages.pages,
       theme: ThemeData(
         primarySwatch: Colors.blue,

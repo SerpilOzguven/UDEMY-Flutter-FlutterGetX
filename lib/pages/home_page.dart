@@ -19,7 +19,10 @@ class HomePage extends StatelessWidget {
             }, child: const Text('Navigation')),
             ElevatedButton(onPressed: (){
               Get.toNamed('/snackBar');
-            }, child: const Text('Snack Bar && Dialog'))
+            }, child: const Text('Snack Bar && Dialog')),
+            ElevatedButton(onPressed: (){
+              Get.toNamed('/translation');
+            }, child: const Text('Translation')),
           ],
         ),
       ),
