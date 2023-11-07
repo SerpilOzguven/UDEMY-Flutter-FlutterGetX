@@ -14,21 +14,43 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: (){
+            ElevatedButton(
+                onPressed: (){
               Get.toNamed('/navigation');
-            }, child: const Text('Navigation')),
-            ElevatedButton(onPressed: (){
+            },
+                child: const Text('Navigation'),
+            ),
+            ElevatedButton(
+                onPressed: (){
               Get.toNamed('/snackBar');
-            }, child: const Text('Snack Bar && Dialog')),
-            ElevatedButton(onPressed: (){
+            },
+                child: const Text('Snack Bar && Dialog'),
+            ),
+            ElevatedButton(
+                onPressed: (){
               Get.toNamed('/translation');
-            }, child: const Text('Translation')),
-            ElevatedButton(onPressed: (){
+            },
+              child: const Text('Translation'),
+            ),
+            ElevatedButton(
+              onPressed: (){
               Get.toNamed('/theme');
-            }, child: const Text('Theme')),
-            ElevatedButton(onPressed: (){
+            },
+              child: const Text('Theme'),
+            ),
+            ElevatedButton(
+                onPressed: (){
               Get.toNamed('/utils');
-            }, child: const Text('Utils')),
+            },
+                child: const  Text('Utils'),
+            ),
+            ElevatedButton(
+                onPressed: (){
+              Get.toNamed('/sm');
+            },
+                child: const Text('SM'),
+
+            ),
           ],
         ),
       ),

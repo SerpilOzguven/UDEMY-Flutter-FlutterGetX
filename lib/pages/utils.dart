@@ -1,3 +1,4 @@
+// TODO Implement this library.import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,11 +12,14 @@ class UtilsPage extends StatelessWidget {
         title: const Text('Utils'),
       ),
       body: Center(
-        child: ElevatedButton(onPressed: (){
-          var deger = GetUtils.isEmail('deðer@1.com');
-          var deger2 = GetUtils.removeAllWhitespace('Val ue');
-          print(deger2);
-        }, child: const Text('Control')),
+        child: ElevatedButton(
+            onPressed: (){
+              var deger = GetUtils.isEmail('deðer@1.com');
+              var deger2 = GetUtils.removeAllWhitespace('va l ue');
+              print(deger2);
+
+            },
+            child: const Text('Control')),
       ),
     );
   }
